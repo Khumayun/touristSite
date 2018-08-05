@@ -5,8 +5,15 @@ import Vuex from 'vuex'
 import JwtDecode from 'jwt-decode'
 
 //export const API_URI = 'https://virtserver.swaggerhub.com/'
-export const API_URI = 'http://193.124.57.156'
+export const API_URI = 'http://193.124.57.156/api'
 
+export const public_api = axios.create({
+  baseURL: API_URI,
+  headers: {
+    'Accept': 'application/json',
+    'Content-Type': 'application/json',
+  }
+});
 
 Vue.use(Vuex)
 Vue.use(VueAxios, axios)
@@ -93,7 +100,7 @@ export default new Vuex.Store({
     getToken(state) {
       return state.jwt
     },
-    getAuthAPI(state){
+    private_api(state){
       return state.private_api
     }
   }

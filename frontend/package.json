@@ -13,6 +13,7 @@
     "axios": "^0.18.0",
     "jwt-decode": "^2.2.0",
     "node-sass": "^4.9.2",
+    "progressive-image": "^1.2.0",
     "sass-loader": "^7.0.3",
     "serve": "^9.4.0",
     "vue": "^2.5.11",

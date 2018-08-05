@@ -1,31 +1,28 @@
 <template>
 	<div class="article">
-		<div class="img"></div>
+		<div class="space"></div>
+		<div class="progressive" style="display: flex;justify-content: center;align-items: center;">
+			<img class="preview" v-progressive="info.img.basic" :src="info.img.preview" />
+		</div>
+		<!-- <div class="img" style="overflow: hidden">
+		</div> -->
 		<div class="description-block">
-			<div class="title">Progressive Web Apps</div>
-			<div class="description">
-				Cross the Greenland Ice Sheet, 
-				kayak in the wilderness for a week, 
-				or climb the highest mountain in Greenland. 
-				How will you test your limits?
-				Cross the Greenland Ice Sheet, 
-				kayak in the wilderness for a week, 
-				or climb the highest mountain in Greenland. 
-				How will you test your limits?
-			</div>
+			<div class="title">{{ info.title }} {{ info.id }}</div>
+			<div class="description">{{ info.description }}</div>
 			<a href="#" class="button">READ</a>
 		</div>
 	</div>
 </template>
 
 <script>
-  export default {
-    name: "ArticleView",
-    data() {
-      return {
-      }
-    }
-  }
+	export default {
+		name: "ArticleView",
+		props: ['info'],
+		data() {
+			return {
+			}
+		}
+	}
 </script>
 <style lang="scss">
 	.article {
@@ -33,16 +30,23 @@
 		margin-left: 5px;
 		margin-right: 5px;
 		background: black;
-		box-shadow: 0 0 38px rgba(0,0,0,0.6);
 		margin-bottom: 35px;
+		height: fit-content;
+		@media only screen and (max-width: 1500px) {
+			width: calc(33.333% - 10px)
+		}
+		@media only screen and (max-width: 860px) {
+			width: calc(50% - 10px)
+		}
+		@media only screen and (max-width: 600px) {
+			width: calc(100% - 10px)
+		}
 		.img {
 			height: 250px;
-			background: url('https://goo.gl/RrgMvU');
 			background-size: cover;
 			background-position: center;
 		}
 		.description-block {
-			height: 270px;
 			color: white;
 			padding-bottom: 10px;
 			padding-left: 20px;

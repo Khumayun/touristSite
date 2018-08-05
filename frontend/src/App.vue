@@ -18,9 +18,8 @@ export default {
 <style lang="scss">
   @font-face {
     font-family: 'brush';
-    src: url('../fonts/levibrush.ttf') format('truetype');
+    src: url('../assets/fonts/levibrush.ttf') format('truetype');
   }
-  
   * {
     margin: 0;
     padding: 0;
