@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome to Uzbekistan!</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<style>
+		@font-face{
+			font-family: brush;
+			src: url('fonts/levibrush.ttf');
+		}
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: 'Roboto', sans-serif;
+		}
+		div, span {
+			box-sizing: border-box;
+		}
+		a {
+			text-decoration: none;
+		}
+		.block {
+			width: 100%;
+			padding-left: 100px;
+			padding-right: 100px;
+			padding-top: 40px;
+			padding-bottom: 40px;
+		}
+		.block .title h2 {
+			font-family: brush;
+			text-align: center;
+			font-size: 60px;
+			letter-spacing: .01em;
+			font-weight: 400;
+			margin-bottom: 0;
+		}
+		.block .title h3 {
+			font-weight: 700;
+			text-align: center;
+			font-size: 22px;
+			line-height: 30px;
+			font-weight: 300;
+			letter-spacing: 0;
+			margin-top: 0;
+		}
+		.block .button {
+			display: block;
+		    margin: 0 auto;
+		    margin-top: 20px;
+		    text-align: center;
+		    border: 1px solid #bd242b;
+		    font-weight: 400;
+		    font-size: 18px;
+		    text-transform: uppercase;
+		    letter-spacing: .02em;
+		    border-radius: 25px;
+		    padding: 10px 20px;
+		    color: #bd242b;
+		    width: max-content;
+		    transition: .3s;
+		}
+		.block .button:hover {
+			background-color: #bd242b;
+		    color: white;
+		}
+		.gray {
+			background-color: #f4f4f4
+		}
+		.row {
+			width: 100%;
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: center;
+		}
+		.article {
+			width: calc(25% - 10px);
+			margin-left: 5px;
+			margin-right: 5px;
+			background: black;
+			box-shadow: 0 0 38px rgba(0,0,0,0.6);
+			margin-bottom: 35px;
+		}
+		.article .img {
+			height: 250px;
+			background: url('https://goo.gl/RrgMvU');
+			background-size: cover;
+			background-position: center;
+		}
+		.article .description-block {
+			height: 270px;
+			color: white;
+			padding-bottom: 10px;
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+		.article .description-block .title {
+			font-family: brush;
+			font-size: 18px;
+			font-weight: 400;
+			line-height: 22px;
+			text-align: center;
+			letter-spacing: .02em;
+			text-transform: uppercase;
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+		.article .description-block .description {
+			font-size: 16px;
+		    font-weight: 300;
+		    line-height: 22px;
+		    padding-top: 10px;
+		    padding-bottom: 10px;
+		    text-align: justify;
+		    letter-spacing: .02em;
+		}
+		.article .description-block .button {
+			display: block;
+		    margin: 0 auto;
+		    margin-top: 20px;
+		    text-align: center;
+		    border: 1px solid #fff;
+		    font-weight: 400;
+		    font-size: 18px;
+		    text-transform: uppercase;
+		    letter-spacing: .02em;
+		    border-radius: 25px;
+		    padding: 10px 20px;
+		    color: white;
+		    width: max-content;
+		    transition: .3s;
+		}
+		.article .description-block .button:hover {
+			transition: .5s;
+			color: black;
+			background-color: white;
+		}
+	</style>
+</head>
+<body>
+	<div class="block">
+		<div class="title">
+			<h2>Articles</h2>
+			<h3>Здесь будет довольно длинное и важное описание блока</h3>
+		</div>
+		<div class="row">
+			<div class="article">
+				<div class="img"></div>
+				<div class="description-block">
+					<div class="title">Progressive Web Apps</div>
+					<div class="description">
+						Cross the Greenland Ice Sheet, 
+						kayak in the wilderness for a week, 
+						or climb the highest mountain in Greenland. 
+						How will you test your limits?
+					</div>
+					<a href="#" class="button">READ</a>
+				</div>
+			</div>
+			<div class="article">
+				<div class="img"></div>
+				<div class="description-block">
+					<div class="title">Progressive Web Apps</div>
+					<div class="description">
+						Cross the Greenland Ice Sheet, 
+						kayak in the wilderness for a week, 
+						or climb the highest mountain in Greenland. 
+						How will you test your limits?
+					</div>
+					<a href="#" class="button">READ</a>
+				</div>
+			</div>
+			<div class="article">
+				<div class="img"></div>
+				<div class="description-block">
+					<div class="title">Progressive Web Apps</div>
+					<div class="description">
+						Cross the Greenland Ice Sheet, 
+						kayak in the wilderness for a week, 
+						or climb the highest mountain in Greenland. 
+						How will you test your limits?
+					</div>
+					<a href="#" class="button">READ</a>
+				</div>
+			</div>
+			<div class="article">
+				<div class="img"></div>
+				<div class="description-block">
+					<div class="title">Progressive Web Apps</div>
+					<div class="description">
+						Cross the Greenland Ice Sheet, 
+						kayak in the wilderness for a week, 
+						or climb the highest mountain in Greenland. 
+						How will you test your limits?
+					</div>
+					<a href="#" class="button">READ</a>
+				</div>
+			</div>
+		</div>
+		<a href="#" class="button">LOAD MORE</a>
+	</div>
+	<div class="block gray">
+		<div class="title">
+			<h2>Articles</h2>
+			<h3>Здесь будет довольно длинное и важное описание блока</h3>
+		</div>
+	</div>
+</body>
+</html>
